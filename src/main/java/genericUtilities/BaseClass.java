@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
@@ -41,9 +42,9 @@ public class BaseClass {
 		{
 			String URL = fUtil.readDataFromPropertyFile("url");
 			
-				driver = new EdgeDriver();
+				//driver = new EdgeDriver();
 			//WebDriverManager.firefoxdriver().setup();
-			//driver=new FirefoxDriver();
+			driver=new FirefoxDriver();
 					
 				//For Cross Browser execution
 			/*	if(pValue.equals("edge"))

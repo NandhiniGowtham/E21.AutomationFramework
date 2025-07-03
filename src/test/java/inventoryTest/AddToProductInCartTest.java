@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
 import genericUtilities.FileUtility;
@@ -34,7 +35,8 @@ public class AddToProductInCartTest {
 		String PRODUCTNAME = fUtil.readDataFromExcelFile("Products", 1, 2);
 
 		// Launch the Browser
-		WebDriver driver = new EdgeDriver();
+		//WebDriver driver = new EdgeDriver();
+		WebDriver driver=new FirefoxDriver();
 		sUtil.maximizeWindow(driver);
 		sUtil.addImplicitlyWait(driver);
 
