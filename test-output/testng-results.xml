@@ -1,179 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-02T12:26:37 GMT-12:00" name="Default suite" finished-at="2025-07-02T12:26:38 GMT-12:00" duration-ms="492">
+  <suite started-at="2025-07-02T15:39:24 GMT-12:00" name="Default suite" finished-at="2025-07-02T15:39:41 GMT-12:00" duration-ms="16934">
     <groups>
-      <group name="RegressionSuite">
-        <method signature="AddToLowestPriceProductInCartTest.tc_001_AddLowestPriceProductToCartTest()[pri:0, instance:inventoryTest.AddToLowestPriceProductInCartTest@ba54932]" name="tc_001_AddLowestPriceProductToCartTest" class="inventoryTest.AddToLowestPriceProductInCartTest"/>
-      </group> <!-- RegressionSuite -->
-      <group name="SmokeSuite">
-        <method signature="AddToLowestPriceProductInCartTest.tc_001_AddLowestPriceProductToCartTest()[pri:0, instance:inventoryTest.AddToLowestPriceProductInCartTest@ba54932]" name="tc_001_AddLowestPriceProductToCartTest" class="inventoryTest.AddToLowestPriceProductInCartTest"/>
-      </group> <!-- SmokeSuite -->
     </groups>
-    <test started-at="2025-07-02T12:26:37 GMT-12:00" name="Default test" finished-at="2025-07-02T12:26:38 GMT-12:00" duration-ms="492">
+    <test started-at="2025-07-02T15:39:24 GMT-12:00" name="Default test" finished-at="2025-07-02T15:39:41 GMT-12:00" duration-ms="16934">
       <class name="inventoryTest.AddToLowestPriceProductInCartTest">
-        <test-method is-config="true" signature="bsConfig()[pri:0, instance:inventoryTest.AddToLowestPriceProductInCartTest@ba54932]" started-at="2025-07-02T12:26:37 GMT-12:00" name="bsConfig" finished-at="2025-07-02T12:26:37 GMT-12:00" duration-ms="23" status="PASS">
+        <test-method is-config="true" signature="bsConfig()[pri:0, instance:inventoryTest.AddToLowestPriceProductInCartTest@574b560f]" started-at="2025-07-02T15:39:24 GMT-12:00" name="bsConfig" finished-at="2025-07-02T15:39:24 GMT-12:00" duration-ms="19" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bsConfig -->
-        <test-method is-config="true" signature="bcConfig()[pri:0, instance:inventoryTest.AddToLowestPriceProductInCartTest@ba54932]" started-at="2025-07-02T12:26:37 GMT-12:00" name="bcConfig" finished-at="2025-07-02T12:26:38 GMT-12:00" duration-ms="135" status="FAIL">
-          <exception class="java.lang.IllegalStateException">
-            <message>
-              <![CDATA[The path to the driver executable The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
-at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:311)
-at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:135)
-at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
-at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
-at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
-at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:114)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:94)
-at genericUtilities.BaseClass.bcConfig(BaseClass.java:47)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:643)
-at org.testng.TestRunner.beforeRun(TestRunner.java:632)
-at org.testng.TestRunner.run(TestRunner.java:594)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
+        <test-method is-config="true" signature="bcConfig()[pri:0, instance:inventoryTest.AddToLowestPriceProductInCartTest@574b560f]" started-at="2025-07-02T15:39:24 GMT-12:00" name="bcConfig" finished-at="2025-07-02T15:39:37 GMT-12:00" duration-ms="12827" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bcConfig -->
-        <test-method is-config="true" signature="bmConfig()[pri:0, instance:inventoryTest.AddToLowestPriceProductInCartTest@ba54932]" started-at="2025-07-02T12:26:38 GMT-12:00" name="bmConfig" finished-at="2025-07-02T12:26:38 GMT-12:00" duration-ms="87" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy16.sendKeys(Unknown Source)
-at objectRepository.LoginPage.loginToApp(LoginPage.java:52)
-at genericUtilities.BaseClass.bmConfig(BaseClass.java:82)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:inventoryTest.AddToLowestPriceProductInCartTest@574b560f]" started-at="2025-07-02T15:39:37 GMT-12:00" name="bmConfig" finished-at="2025-07-02T15:39:38 GMT-12:00" duration-ms="1075" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bmConfig -->
-        <test-method signature="tc_001_AddLowestPriceProductToCartTest()[pri:0, instance:inventoryTest.AddToLowestPriceProductInCartTest@ba54932]" started-at="2025-07-02T12:26:38 GMT-12:00" name="tc_001_AddLowestPriceProductToCartTest" finished-at="2025-07-02T12:26:38 GMT-12:00" duration-ms="0" status="SKIP">
-          <exception class="java.lang.IllegalStateException">
+        <test-method signature="Tc_002_AddLowestPriceProductToCartTest()[pri:0, instance:inventoryTest.AddToLowestPriceProductInCartTest@574b560f]" started-at="2025-07-02T15:39:38 GMT-12:00" name="Tc_002_AddLowestPriceProductToCartTest" finished-at="2025-07-02T15:39:39 GMT-12:00" duration-ms="563" status="FAIL">
+          <exception class="java.lang.NoSuchMethodError">
             <message>
-              <![CDATA[The path to the driver executable The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases]]>
+              <![CDATA['org.apache.logging.log4j.LogBuilder org.apache.logging.log4j.Logger.atTrace()']]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
-at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:311)
-at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:135)
-at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
-at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
-at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
-at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:114)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:94)
-at genericUtilities.BaseClass.bcConfig(BaseClass.java:47)
+              <![CDATA[java.lang.NoSuchMethodError: 'org.apache.logging.log4j.LogBuilder org.apache.logging.log4j.Logger.atTrace()'
+at org.apache.xmlbeans.impl.schema.SchemaTypeSystemImpl.<init>(SchemaTypeSystemImpl.java:199)
+at org.apache.xmlbeans.metadata.system.sXMLCONFIG.TypeSystemHolder.<init>(TypeSystemHolder.java:9)
+at org.apache.xmlbeans.metadata.system.sXMLCONFIG.TypeSystemHolder.<clinit>(TypeSystemHolder.java:6)
+at java.base/java.lang.Class.forName0(Native Method)
+at java.base/java.lang.Class.forName(Class.java:534)
+at java.base/java.lang.Class.forName(Class.java:513)
+at org.apache.xmlbeans.impl.schema.SchemaTypeLoaderImpl.build(SchemaTypeLoaderImpl.java:157)
+at org.apache.xmlbeans.impl.schema.SchemaTypeLoaderImpl.build(SchemaTypeLoaderImpl.java:131)
+at org.apache.xmlbeans.XmlBeans.typeLoaderForClassLoader(XmlBeans.java:425)
+at org.openxmlformats.schemas.drawingml.x2006.main.ThemeDocument$Factory.getTypeLoader(Unknown Source)
+at org.openxmlformats.schemas.drawingml.x2006.main.ThemeDocument$Factory.parse(Unknown Source)
+at org.apache.poi.xssf.model.ThemesTable.<init>(ThemesTable.java:86)
+at org.apache.poi.ooxml.POIXMLFactory.createDocumentPart(POIXMLFactory.java:61)
+at org.apache.poi.ooxml.POIXMLDocumentPart.read(POIXMLDocumentPart.java:684)
+at org.apache.poi.ooxml.POIXMLDocument.load(POIXMLDocument.java:180)
+at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:288)
+at org.apache.poi.xssf.usermodel.XSSFWorkbookFactory.createWorkbook(XSSFWorkbookFactory.java:97)
+at org.apache.poi.xssf.usermodel.XSSFWorkbookFactory.createWorkbook(XSSFWorkbookFactory.java:147)
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:256)
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:221)
+at genericUtilities.FileUtility.readDataFromExcelFile(FileUtility.java:50)
+at inventoryTest.AddToLowestPriceProductInCartTest.Tc_002_AddLowestPriceProductToCartTest(AddToLowestPriceProductInCartTest.java:21)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:643)
-at org.testng.TestRunner.beforeRun(TestRunner.java:632)
-at org.testng.TestRunner.run(TestRunner.java:594)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc_001_AddLowestPriceProductToCartTest -->
-        <test-method is-config="true" signature="amConfig()[pri:0, instance:inventoryTest.AddToLowestPriceProductInCartTest@ba54932]" started-at="2025-07-02T12:26:38 GMT-12:00" name="amConfig" finished-at="2025-07-02T12:26:38 GMT-12:00" duration-ms="7" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
-at objectRepository.InventoryPage.logoutOfApp(InventoryPage.java:56)
-at genericUtilities.BaseClass.amConfig(BaseClass.java:91)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:785)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:613)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
@@ -198,15 +76,19 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.NoSuchMethodError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tc_002_AddLowestPriceProductToCartTest -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:inventoryTest.AddToLowestPriceProductInCartTest@574b560f]" started-at="2025-07-02T15:39:39 GMT-12:00" name="amConfig" finished-at="2025-07-02T15:39:39 GMT-12:00" duration-ms="542" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- amConfig -->
-        <test-method is-config="true" signature="acconfig()[pri:0, instance:inventoryTest.AddToLowestPriceProductInCartTest@ba54932]" started-at="2025-07-02T12:26:38 GMT-12:00" name="acconfig" finished-at="2025-07-02T12:26:38 GMT-12:00" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="acconfig()[pri:0, instance:inventoryTest.AddToLowestPriceProductInCartTest@574b560f]" started-at="2025-07-02T15:39:39 GMT-12:00" name="acconfig" finished-at="2025-07-02T15:39:41 GMT-12:00" duration-ms="1791" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acconfig -->
-        <test-method is-config="true" signature="asconfig()[pri:0, instance:inventoryTest.AddToLowestPriceProductInCartTest@ba54932]" started-at="2025-07-02T12:26:38 GMT-12:00" name="asconfig" finished-at="2025-07-02T12:26:38 GMT-12:00" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="asconfig()[pri:0, instance:inventoryTest.AddToLowestPriceProductInCartTest@574b560f]" started-at="2025-07-02T15:39:41 GMT-12:00" name="asconfig" finished-at="2025-07-02T15:39:41 GMT-12:00" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- asconfig -->

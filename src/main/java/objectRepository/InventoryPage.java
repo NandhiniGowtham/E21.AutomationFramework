@@ -13,8 +13,8 @@ public class InventoryPage extends SeleniumUtility {
 		@FindBy(className = "product_sort_container")
 		private WebElement sortDropDown;
 
-		@FindBy(id ="react-burger-menu-btn")
-		//@FindBy()
+	//	@FindBy(id ="react-burger-menu-btn")
+		@FindBy(className="bm-burger-button")
 		private WebElement menuBtn;
 
 		@FindBy(linkText = "Logout")

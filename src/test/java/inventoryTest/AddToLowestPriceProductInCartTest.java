@@ -12,9 +12,9 @@ import objectRepository.InventoryPage;
 
 public class AddToLowestPriceProductInCartTest extends BaseClass{
 
-	//@Test
-	@Test(groups = {"RegressionSuite","SmokeSuite"})
-		public void tc_001_AddLowestPriceProductToCartTest() throws IOException
+	@Test
+	//@Test(groups = {"RegressionSuite","SmokeSuite"})
+		public void Tc_002_AddLowestPriceProductToCartTest() throws IOException
 		{
 
 			// Read the Test Data from Excel file

@@ -11,7 +11,7 @@
           <include name="bmConfig"/>
           <include name="asconfig"/>
           <include name="bsConfig"/>
-          <include name="tc_001_AddLowestPriceProductToCartTest"/>
+          <include name="Tc_002_AddLowestPriceProductToCartTest"/>
         </methods>
       </class> <!-- inventoryTest.AddToLowestPriceProductInCartTest -->
     </classes>

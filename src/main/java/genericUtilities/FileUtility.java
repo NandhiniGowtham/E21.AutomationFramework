@@ -44,9 +44,10 @@ public class FileUtility {
 	 */
 	public String readDataFromExcelFile(String sheetName, int rowNo, int celNo) throws EncryptedDocumentException, IOException
 	{
-		String path ="C:\\Users\\Rajeshkumar V\\eclipse-workspace\\E21AutomationFramework\\data\\E21Data.xlsx";
-		FileInputStream fis = new FileInputStream(path);
-		Workbook wb = WorkbookFactory.create(fis);
+	String path ="C:\\Users\\Rajeshkumar V\\eclipse-workspace\\E21AutomationFramework\\data\\E21Data.xlsx";
+		FileInputStream fiss = new FileInputStream(path);
+				//("C:\\Users\\Rajeshkumar V\\eclipse-workspace\\E21AutomationFramework\\data\\E21Data.xlsx");
+		Workbook wb = WorkbookFactory.create(fiss);
 		String value = wb.getSheet(sheetName).getRow(rowNo).getCell(celNo).getStringCellValue();
 	    return value;
 	
